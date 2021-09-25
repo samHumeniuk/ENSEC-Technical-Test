@@ -1,6 +1,6 @@
 using System;
 
-namespace MeterReadingAPI
+namespace MeterReadingDataAccessLayer
 {
     public class MeterReadingHelper
     {
