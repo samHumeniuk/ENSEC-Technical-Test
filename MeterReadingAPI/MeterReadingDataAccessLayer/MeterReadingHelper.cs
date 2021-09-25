@@ -19,7 +19,12 @@ namespace MeterReadingDataAccessLayer
 
         public void Validate(MeterReading meterReading)
         {
-            //TODO
+            var account = _meterReadingDbContext.Accounts.Find(meterReading.AccountId);
+
+            if(account == null)
+            {
+                throw new AccountNotRecognisedException(meterReading.AccountId);
+            }
         }
 
         public void Save(MeterReading meterReading)
