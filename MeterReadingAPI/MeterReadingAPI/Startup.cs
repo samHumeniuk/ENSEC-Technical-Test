@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -31,6 +32,12 @@ namespace MeterReadingAPI
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MeterReadingAPI", Version = "v1" });
+            });
+
+            services.AddTransient<MeterReadingHelper>();
+            services.AddDbContext<MeterReadingDbContext>(options =>
+            {
+                options.UseInMemoryDatabase(databaseName: "meterReadingDatabase");
             });
         }
 

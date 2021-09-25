@@ -15,10 +15,12 @@ namespace MeterReadingAPI.Controllers
     {
 
         private readonly ILogger<MeterReaderController> _logger;
+        private readonly MeterReadingHelper _meterReadingHelper;
 
-        public MeterReaderController(ILogger<MeterReaderController> logger)
+        public MeterReaderController(ILogger<MeterReaderController> logger, MeterReadingHelper meterReadingHelper)
         {
             _logger = logger;
+            _meterReadingHelper = meterReadingHelper;
         }
 
 
@@ -37,17 +39,16 @@ namespace MeterReadingAPI.Controllers
                     var csvLine = streamReader.ReadLine();
                     try
                     {
-                        meterReadings.Add(MeterReadingCsvParser.FromCsv(csvLine));
+                        var meterReading = MeterReadingCsvParser.FromCsv(csvLine);
+                        _meterReadingHelper.ValidateAndSave(meterReading);
                         successfulReadings++;
                     }
                     //TODO: catch a specific type of exception
-                    catch(Exception)
+                    catch(Exception exception)
                     {
                         unsuccessfulReadings++;
                     }
                 }
-
-                //TODO: save to database
 
                 return new MeterReadingSuccessStatistic()
                 {
