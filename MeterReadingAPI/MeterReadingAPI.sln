@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReadingAPI", "MeterReadingAPI\MeterReadingAPI.csproj", "{FA7617D7-A72A-4830-A7EE-25F4E3390B8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReadingAPI", "MeterReadingAPI\MeterReadingAPI.csproj", "{FA7617D7-A72A-4830-A7EE-25F4E3390B8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReadingDataAccessLayer", "MeterReadingDataAccessLayer\MeterReadingDataAccessLayer.csproj", "{5F43B7F2-7887-4AA8-A4D0-A59C3BEC560B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReadingDataAccessLayer", "MeterReadingDataAccessLayer\MeterReadingDataAccessLayer.csproj", "{5F43B7F2-7887-4AA8-A4D0-A59C3BEC560B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReading.API.Test", "test\MeterReading.API.Test\MeterReading.API.Test.csproj", "{661773BA-C524-4E4E-873F-3196A515ED21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReading.DataAccessLayer.Test", "test\MeterReading.DataAccessLayer.Test\MeterReading.DataAccessLayer.Test.csproj", "{68538841-5A62-453F-9518-EC3EFF9B499C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{5F43B7F2-7887-4AA8-A4D0-A59C3BEC560B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F43B7F2-7887-4AA8-A4D0-A59C3BEC560B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F43B7F2-7887-4AA8-A4D0-A59C3BEC560B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{661773BA-C524-4E4E-873F-3196A515ED21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661773BA-C524-4E4E-873F-3196A515ED21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661773BA-C524-4E4E-873F-3196A515ED21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661773BA-C524-4E4E-873F-3196A515ED21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68538841-5A62-453F-9518-EC3EFF9B499C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68538841-5A62-453F-9518-EC3EFF9B499C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68538841-5A62-453F-9518-EC3EFF9B499C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68538841-5A62-453F-9518-EC3EFF9B499C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
