@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReadingStorage.API", "src\MeterReadingAPI\MeterReadingStorage.API.csproj", "{FA7617D7-A72A-4830-A7EE-25F4E3390B8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReadingStorage.API", "src\MeterReadingStorage.API\MeterReadingStorage.API.csproj", "{FA7617D7-A72A-4830-A7EE-25F4E3390B8C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReadingStorage.DataAccessLayer", "src\MeterReadingDataAccessLayer\MeterReadingStorage.DataAccessLayer.csproj", "{5F43B7F2-7887-4AA8-A4D0-A59C3BEC560B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReadingStorage.DataAccessLayer", "src\MeterReadingStorage.DataAccessLayer\MeterReadingStorage.DataAccessLayer.csproj", "{5F43B7F2-7887-4AA8-A4D0-A59C3BEC560B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReadingStorage.API.Test", "test\MeterReading.API.Test\MeterReadingStorage.API.Test.csproj", "{661773BA-C524-4E4E-873F-3196A515ED21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReadingStorage.API.Test", "test\MeterReadingStorage.API.Test\MeterReadingStorage.API.Test.csproj", "{661773BA-C524-4E4E-873F-3196A515ED21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReadingStorage.DataAccessLayer.Test", "test\MeterReading.DataAccessLayer.Test\MeterReadingStorage.DataAccessLayer.Test.csproj", "{68538841-5A62-453F-9518-EC3EFF9B499C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReadingStorage.DataAccessLayer.Test", "test\MeterReadingStorage.DataAccessLayer.Test\MeterReadingStorage.DataAccessLayer.Test.csproj", "{68538841-5A62-453F-9518-EC3EFF9B499C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FEC2BFD8-365C-4189-AD38-B2EA8B8C62AD}"
 EndProject

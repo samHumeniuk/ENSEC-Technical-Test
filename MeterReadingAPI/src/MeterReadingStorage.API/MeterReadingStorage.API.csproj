@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MeterReadingDataAccessLayer\MeterReadingStorage.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\MeterReadingStorage.DataAccessLayer\MeterReadingStorage.DataAccessLayer.csproj" />
   </ItemGroup>
 		
 
