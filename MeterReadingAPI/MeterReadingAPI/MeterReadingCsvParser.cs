@@ -13,12 +13,19 @@ namespace MeterReadingAPI
             meterReading.AccountId = Convert.ToInt32(values[0]);
             meterReading.MeterReadingDateTime = Convert.ToDateTime(values[1]);
 
-            var meterReadingAsString = values[2];
-            if(!meterReadingAsString.All(char.IsDigit))
+            var meterReadingValueAsString = values[2];
+            if(!meterReadingValueAsString.All(char.IsDigit))
             {
-                throw new FormatException($"The meter reading value of {meterReadingAsString} could not be converted to a number");
+                throw new FormatException($"The meter reading value of {meterReadingValueAsString} could not be converted to a number");
             }
-            meterReading.MeterReadingValue = Convert.ToInt32(meterReadingAsString);
+            var meterReadingValue = Convert.ToInt32(meterReadingValueAsString);
+
+            if (meterReadingValue > 99999 || meterReadingValue < -99999)
+            {
+                throw new FormatException($"The meter reading value of {meterReadingValueAsString} was greater than 5 digits long");
+            }
+
+            meterReading.MeterReadingValue = meterReadingValue;
 
             return meterReading;
         }
