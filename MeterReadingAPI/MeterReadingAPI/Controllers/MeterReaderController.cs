@@ -35,7 +35,11 @@ namespace MeterReadingAPI.Controllers
                 IList<MeterReading> meterReadings = new List<MeterReading>();
                 var successfulReadings = 0;
                 var unsuccessfulReadings = 0;
-                while(!streamReader.EndOfStream)
+
+                //ignore the first line of the csv since it should be headers.
+                streamReader.ReadLine();
+
+                while (!streamReader.EndOfStream)
                 {
                     var csvLine = streamReader.ReadLine();
                     try
