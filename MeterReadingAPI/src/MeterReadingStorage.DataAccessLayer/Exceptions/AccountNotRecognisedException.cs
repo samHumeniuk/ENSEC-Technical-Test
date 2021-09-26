@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace MeterReadingStorage.DataAccessLayer
 {
     [Serializable]
-    public class AccountNotRecognisedException : Exception
+    public class AccountNotRecognisedException : BaseMeterReadingStorageException
     {
         private int _accountId;
 

@@ -48,8 +48,11 @@ namespace MeterReadingStorage.API.Controllers
                         _meterReadingHelper.ValidateAndSave(meterReading);
                         successfulReadings++;
                     }
-                    //TODO: catch a specific type of exception
-                    catch(Exception exception)
+                    catch(BaseMeterReadingStorageException)
+                    {
+                        unsuccessfulReadings++;
+                    }
+                    catch(FormatException)
                     {
                         unsuccessfulReadings++;
                     }
