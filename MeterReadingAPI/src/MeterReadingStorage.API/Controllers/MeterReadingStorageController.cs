@@ -12,13 +12,13 @@ namespace MeterReadingAPI.Controllers
 {
     [ApiController]
     [Route("meter-reading-uploads")]
-    public class MeterReaderController : ControllerBase
+    public class MeterReadingStorageController : ControllerBase
     {
 
-        private readonly ILogger<MeterReaderController> _logger;
+        private readonly ILogger<MeterReadingStorageController> _logger;
         private readonly MeterReadingHelper _meterReadingHelper;
 
-        public MeterReaderController(ILogger<MeterReaderController> logger, MeterReadingHelper meterReadingHelper)
+        public MeterReadingStorageController(ILogger<MeterReadingStorageController> logger, MeterReadingHelper meterReadingHelper)
         {
             _logger = logger;
             _meterReadingHelper = meterReadingHelper;
