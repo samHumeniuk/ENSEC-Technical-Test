@@ -16,6 +16,13 @@ namespace MeterReadingStorage.API.Test
         }
 
         [Test]
+        public void MeterReadingCsvParser_FromCsv_WithInvalidReading_Should_ThrowExcepiton()
+        {
+            Assert.Throws<FormatException>(() => MeterReadingCsvParser.FromCsv("2346,22/04/2019 12:25,0x16"));
+        }
+
+
+        [Test]
         public void MeterReadingCsvParser_FromCsv_WithHugeReading_Should_ThrowExcepiton()
         {
             Assert.Throws<FormatException>(() => MeterReadingCsvParser.FromCsv("2346,22/04/2019 12:25,999999"));
