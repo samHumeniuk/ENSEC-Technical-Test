@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace MeterReadingDataAccessLayer
 {
@@ -24,6 +25,14 @@ namespace MeterReadingDataAccessLayer
             if(account == null)
             {
                 throw new AccountNotRecognisedException(meterReading.AccountId);
+            }
+
+            var existingMeterReading = _meterReadingDbContext.MeterReadings
+                .Where(x => x.MeterReadingDateTime == meterReading.MeterReadingDateTime && x.AccountId == meterReading.AccountId);
+
+            if(existingMeterReading != null)
+            {
+                throw new MeterReadingAlreadyAddedException(meterReading.AccountId, meterReading.MeterReadingDateTime);
             }
         }
 

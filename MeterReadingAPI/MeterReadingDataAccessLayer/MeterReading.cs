@@ -9,9 +9,10 @@ namespace MeterReadingDataAccessLayer
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MeterReadingId {get; set;}
-        //TODO: add primary key to this table
+
         [ForeignKey("Account")]
         public int AccountId { get; set; }
+
         public DateTime MeterReadingDateTime { get; set; }
 
         public int MeterReadingValue { get; set; }
