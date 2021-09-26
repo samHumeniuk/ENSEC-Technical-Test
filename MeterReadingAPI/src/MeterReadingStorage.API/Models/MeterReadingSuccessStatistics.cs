@@ -1,6 +1,6 @@
 using System;
 
-namespace MeterReadingAPI
+namespace MeterReadingStorage.API
 {
     public class MeterReadingSuccessStatistic
     {

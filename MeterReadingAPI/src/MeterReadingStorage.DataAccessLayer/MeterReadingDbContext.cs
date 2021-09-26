@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace MeterReadingDataAccessLayer
+namespace MeterReadingStorage.DataAccessLayer
 {
     public class MeterReadingDbContext : DbContext
     {

@@ -1,4 +1,4 @@
-﻿using MeterReadingDataAccessLayer;
+﻿using MeterReadingStorage.DataAccessLayer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -8,7 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MeterReadingAPI.Controllers
+namespace MeterReadingStorage.API.Controllers
 {
     [ApiController]
     [Route("meter-reading-uploads")]

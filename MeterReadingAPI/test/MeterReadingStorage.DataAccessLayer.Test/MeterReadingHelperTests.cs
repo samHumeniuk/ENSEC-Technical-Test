@@ -1,10 +1,10 @@
-using MeterReadingDataAccessLayer;
+using MeterReadingStorage.DataAccessLayer;
 using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 using System;
 using System.Linq;
 
-namespace MeterReadingDataAccessLayer.Test
+namespace MeterReadingStorage.DataAccessLayer.Test
 {
     public class MeterReadingHelperTests
     {

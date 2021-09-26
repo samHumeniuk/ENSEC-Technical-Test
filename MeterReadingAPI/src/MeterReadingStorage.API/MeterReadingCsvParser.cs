@@ -1,8 +1,8 @@
-using MeterReadingDataAccessLayer;
+using MeterReadingStorage.DataAccessLayer;
 using System;
 using System.Linq;
 
-namespace MeterReadingAPI
+namespace MeterReadingStorage.API
 {
     public static class MeterReadingCsvParser
     {

@@ -1,10 +1,10 @@
 using FluentAssertions;
-using MeterReadingAPI;
-using MeterReadingDataAccessLayer;
+using MeterReadingStorage.API;
+using MeterReadingStorage.DataAccessLayer;
 using NUnit.Framework;
 using System;
 
-namespace MeterReadingAPI.Test
+namespace MeterReadingStorage.API.Test
 {
     public class MeterReadingCsvParserTests
     {

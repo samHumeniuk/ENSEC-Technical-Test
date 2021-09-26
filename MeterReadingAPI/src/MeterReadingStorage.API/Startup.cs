@@ -1,4 +1,4 @@
-using MeterReadingDataAccessLayer;
+using MeterReadingStorage.DataAccessLayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -14,7 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MeterReadingAPI
+namespace MeterReadingStorage.API
 {
     public class Startup
     {
@@ -32,7 +32,7 @@ namespace MeterReadingAPI
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MeterReadingAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MeterReadingStorage.API", Version = "v1" });
             });
 
             services.AddTransient<MeterReadingHelper>();
@@ -49,7 +49,7 @@ namespace MeterReadingAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MeterReadingAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MeterReadingStorage.API v1"));
             }
 
             app.UseHttpsRedirection();

@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MeterReadingDataAccessLayer
+namespace MeterReadingStorage.DataAccessLayer
 {
     public class Account
     {

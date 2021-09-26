@@ -1,10 +1,10 @@
-﻿using MeterReadingDataAccessLayer;
+﻿using MeterReadingStorage.DataAccessLayer;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 
-namespace MeterReadingAPI
+namespace MeterReadingStorage.API
 {
     public static class WebHostExtensions
     {

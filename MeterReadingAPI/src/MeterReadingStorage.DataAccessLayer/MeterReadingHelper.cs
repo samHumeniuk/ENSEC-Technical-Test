@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace MeterReadingDataAccessLayer
+namespace MeterReadingStorage.DataAccessLayer
 {
     public class MeterReadingHelper
     {

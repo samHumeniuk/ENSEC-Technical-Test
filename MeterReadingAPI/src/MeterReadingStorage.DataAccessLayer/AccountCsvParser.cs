@@ -1,7 +1,7 @@
 
 using System;
 
-namespace MeterReadingDataAccessLayer
+namespace MeterReadingStorage.DataAccessLayer
 {
     public static class AccountCsvParser
     {

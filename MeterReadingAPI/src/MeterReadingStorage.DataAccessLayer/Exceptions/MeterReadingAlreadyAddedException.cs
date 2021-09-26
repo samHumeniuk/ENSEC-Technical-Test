@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace MeterReadingDataAccessLayer
+namespace MeterReadingStorage.DataAccessLayer
 {
     [Serializable]
     public class MeterReadingAlreadyAddedException : Exception
