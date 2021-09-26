@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\MeterReadingAPI\MeterReadingAPI.csproj" />
+    <ProjectReference Include="..\..\src\MeterReadingAPI\MeterReadingAPI.csproj" />
   </ItemGroup>
 
 </Project>
