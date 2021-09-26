@@ -27,10 +27,10 @@ namespace MeterReadingDataAccessLayer
                 throw new AccountNotRecognisedException(meterReading.AccountId);
             }
 
-            var existingMeterReading = _meterReadingDbContext.MeterReadings
+            var existingMeterReadings = _meterReadingDbContext.MeterReadings
                 .Where(x => x.MeterReadingDateTime == meterReading.MeterReadingDateTime && x.AccountId == meterReading.AccountId);
 
-            if(existingMeterReading != null)
+            if(existingMeterReadings.Any())
             {
                 throw new MeterReadingAlreadyAddedException(meterReading.AccountId, meterReading.MeterReadingDateTime);
             }
